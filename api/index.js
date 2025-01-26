@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(cors());
 
 app.use("/api/users", require("../routes/authRoutes"));
-app.post("/", ()=>{
+app.get("/", ()=>{
     res.send({message:"send"})
 })
 
